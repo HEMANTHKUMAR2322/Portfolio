@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cer.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hemanth Kumar Bandaru</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hemanth Borra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/prof2.png" alt="Hemanth profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hemanth Kumar Bandaru</h1>
+        <p class="styled-paragraph">Software Engineer, Business Analyst, Web Developer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resu.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location='#contact'">
+            Contact Info
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hemanth-kumar-bandaru-a90940232'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/HEMANTHKUMAR2322'"
+          />
+        </div>
+      </div>
+    </section>  
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- <img src="./assets/unchem.png" alt="Profile picture" class="about-pic" /> -->
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <div style="font-size: 1.2em; line-height: 1.4;">
+              <p></p>I am currently pursuing an MSc in Computer Science at Teesside University, where I am strengthening my knowledge in advanced computing concepts, software engineering, and modern application development. 
+              I have a strong foundation in computer science supported by hands-on experience through internships in Python and full-stack web development, working with technologies such as HTML, CSS, JavaScript, Bootstrap, Flask, Django, and MySQL. 
+              Alongside development, I am actively engaged in problem solving and competitive programming on platforms like LeetCode, CodeChef, HackerRank, and HackerEarth, which has enhanced my logical thinking, data structures, and algorithmic skills. 
+              I have also worked on projects involving machine learning, natural language processing, and reinforcement learning. I enjoy transforming complex problems into efficient, scalable, and user-friendly software solutions and continuously strive 
+              to learn new technologies while contributing to real-world projects as a growing software professional.
+              </p>
+            </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+     
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h2 class="experience-sub-title">Education</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+            
+            <div class="education-item">
+              <h3>Teesside University, Middlesbrough</h3>
+              <p>Master of Science | Computer Science</p>
+              <p>Sep 2025 - May 2027</p>
+              <p></p>
+            </div>
+            
+            <div class="education-item">
+              <h3>Vignan's Institute of Information Technology (VIIT)</h3>
+              <p>Bachelor of Technology | Computer Science and Engineering</p>
+              <p>July 2020 - May 2024</p>
+              <p>CGPA: 8.28/10</p>
+            </div>
+          </div>
+          
+          <hr class="separator"> <!-- Line separator between sections -->
+          
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2 class="experience-sub-title">Experience</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+            <div class="experience-item">
+              <h3>Amazon WareHouse</h3>
+              <p>Sortation Assitant<br />Oct 2025 – Present</p>
+            </div>
+            <div class="experience-item">
+              <h3>SlashMark IT Solutions Pvt. Ltd</h3>
+              <p>Full Stack Developer<br />Nov 2023 – Feb 2024</p>
+            </div>
+            
+            <div class="experience-item">
+              <h3>Octanet IT Services</h3>
+              <p>Software Developer Intern<br />May 2023 – Aug 2023</p>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                 src="./assets/carpp.png"
+                alt="Hospital Management System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Car Price Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HEMANTHKUMAR2322/Car-Price-Prediction'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/textsumm.png"
+              alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Text Summarization of Online Meetings</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='://gib.com/hemanthborra4444/HHS'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/LunarLoo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Lunar Lander using RL</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HEMANTHKUMAR2322/LunarLander'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Showcasing My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-flip-container">
+
+
+        <!-- Certification 3: IBM -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/ibm.webp" alt="IBM Logo" class="cert-logo" />
+              <h2 class="cert-title">Project Management Fundamentals</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Successfully completed Project Management Fundamentals by IBM
+                SkillsBuild.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/pmc.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/li.webp" alt="AWS Logo" class="cert-logo" />
+              <h2 class="cert-title">Machine Learning Foundations</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Recognized by LinkedIn Learning for successfully completing Machine Learning Foundations.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/cocml.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/sololearn.webp" alt="NPTEL Logo" class="cert-logo" />
+              <h2 class="cert-title">Python for Beginners</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Achieved certification in Programming Fundamentals with Python by sololearn.
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/pylang.jpeg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Certification 1: Cisco -->
+
+         <!-- Certification 2: AWS -->
+       <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/li.webp" alt="AWS Logo" class="cert-logo" />
+            <h2 class="cert-title">Flask Training</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Recognized by LinkedIn Learning for successfully completing Flask Essential Training.
+
+            </p>
+            <button
+              class="btn btn-view-cert"
+              onclick="window.open('./assets/cocflask.pdf')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/sololearn.webp" alt="Cisco Logo" class="cert-logo" />
+              <h2 class="cert-title">C Programming</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Achieved certification in Programming Fundamentals with C Programming by sololearn.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/clang.jpeg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+          
+
+        
+       
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/li.webp" alt="AWS Logo" class="cert-logo" />
+              <h2 class="cert-title">Django Training</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Certified by LinkedIn Learning upon completion of Django Essential Training.
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/cocdjango.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        
+    
+        <!-- Certification 4: NPTEL -->
+       
+      </div>
+      
+    </section>
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+    
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hemanthkumarbandaru23@gmail.com">hemanthkumarbandaru23@gmail.com</a></p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hemanth-kumar-bandaru-a90940232">LinkedIn</a></p>
+        </div>
+    
+        <!-- Phone -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p><a href="tel:+17048198597">+44 07721377521</a></p>
+        </div>
+    
+        <!-- GitHub -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon github-icon"
+          />
+          <p><a href="https://github.com/HEMANTHKUMAR2322">GitHub</a></p>
+        </div>
+    
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <p>Thank you for checking out my work! I appreciate your support and hope you find something that resonates with you. Your engagement means a lot to me!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

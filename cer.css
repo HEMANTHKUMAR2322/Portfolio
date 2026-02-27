@@ -1,0 +1,106 @@
+/* Certifications Container */
+.certifications-flip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+    gap: 40px;
+    padding: 40px;
+    justify-items: center;
+}
+
+/* Flip Card Styles */
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+}
+
+/* Front card */
+.flip-card-front {
+    background-color: white;
+}
+
+/* Back card */
+.flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+/* Card Logo */
+.cert-logo {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+/* Title Style */
+.cert-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Button Style */
+.btn-view-cert {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-view-cert:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .certifications-flip-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-flip-container {
+        grid-template-columns: 1fr; /* Stack cards on mobile */
+    }
+
+    .flip-card {
+        width: 90%;
+    }
+}
